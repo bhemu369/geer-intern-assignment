@@ -1,6 +1,7 @@
 import React from 'react'
 import './globals.css'
 import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 
 export const metadata = {
   title: 'Naksh Jewels - Premium Jewelry Collection',
@@ -16,7 +17,8 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-sans antialiased">
         <Navigation />
-        {children}
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   )
