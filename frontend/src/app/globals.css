@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Test to ensure Tailwind is loading */
+@layer base {
+  html {
+    font-family: ui-sans-serif, system-ui, sans-serif;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  .btn-primary {
+    @apply bg-amber-600 hover:bg-amber-700 text-white font-semibold py-2 px-4 rounded transition duration-300;
+  }
+}
